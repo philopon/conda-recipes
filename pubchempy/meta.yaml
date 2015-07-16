@@ -1,0 +1,21 @@
+package:
+  name: pubchempy
+  version: "1.0.3"
+
+source:
+  fn: PubChemPy-1.0.3.tar.gz
+  url: https://pypi.python.org/packages/source/P/PubChemPy/PubChemPy-1.0.3.tar.gz
+  md5: 4d99ea6ad0eaf3c402b6b2754621a807
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+about:
+  home: https://github.com/mcs07/PubChemPy
+  license: MIT License
+  summary: 'A simple Python wrapper around the PubChem PUG REST API.'
