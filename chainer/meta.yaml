@@ -1,0 +1,42 @@
+package:
+  name: chainer
+  version: "1.1.0"
+
+source:
+  fn: chainer-1.1.0.tar.gz
+  url: https://pypi.python.org/packages/source/c/chainer/chainer-1.1.0.tar.gz
+  md5: 3f42a6312a45dcb1dddfbf3caaab5375
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - nose
+    - numpy
+    - protobuf
+    - six >=1.9.0
+
+  run:
+    - python
+    - nose
+    - numpy
+    - protobuf
+    - six >=1.9.0
+
+test:
+  imports:
+    - chainer
+    - chainer.cudnn
+    - chainer.functions
+    - chainer.functions.caffe
+    - chainer.optimizers
+    - chainer.testing
+    - chainer.utils
+
+  requires:
+    - nose
+
+about:
+  home: http://chainer.org/
+  license: MIT license
+  summary: 'A flexible framework of neural networks'
