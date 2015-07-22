@@ -1,11 +1,11 @@
 package:
   name: chainer
-  version: "1.1.0"
+  version: "1.1.1"
 
 source:
-  fn: chainer-1.1.0.tar.gz
-  url: https://pypi.python.org/packages/source/c/chainer/chainer-1.1.0.tar.gz
-  md5: 3f42a6312a45dcb1dddfbf3caaab5375
+  fn: chainer-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/c/chainer/chainer-1.1.1.tar.gz
+  md5: f785c33ac0c2cdb950183ca8a2299513
 
 requirements:
   build:
