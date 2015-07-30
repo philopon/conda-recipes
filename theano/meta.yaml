@@ -1,0 +1,32 @@
+package:
+  name: theano
+  version: "0.7.0"
+
+build:
+  number: 0
+
+source:
+  fn: Theano-0.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/T/Theano/Theano-0.7.0.tar.gz
+  md5: 099a9575801b71252b5bbbc3c34ed45a
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy >=1.6.2
+    - scipy >=0.11
+
+  run:
+    - python
+    - numpy >=1.6.2
+    - scipy >=0.11
+
+test:
+  requires:
+    - nose
+
+about:
+  home: http://deeplearning.net/software/theano/
+  license: BSD License
+  summary: 'Optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.'
