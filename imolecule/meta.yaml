@@ -1,0 +1,31 @@
+package:
+  name: imolecule
+  version: "0.1.8"
+
+build:
+  number: 0
+
+source:
+  fn: imolecule-0.1.8.tar.gz
+  url: https://pypi.python.org/packages/source/i/imolecule/imolecule-0.1.8.tar.gz
+  md5: 8c2876275ad351651d8d4a033f75326a
+  patches:
+    - setup.py.patch
+
+requirements:
+  build:
+    - ipython
+    - setuptools
+    - tornado
+
+  run:
+    - ipython
+
+test:
+  imports:
+    - imolecule
+
+about:
+  home: http://patrick-fuller.com/imolecule/
+  license: MIT license
+  summary: 'An embeddable webGL molecule viewer and file format converter.'

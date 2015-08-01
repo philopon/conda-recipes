@@ -1,0 +1,9 @@
+--- setup.py.orig	2015-08-02 00:50:01.000000000 +0900
++++ setup.py	2015-08-02 00:47:11.000000000 +0900
+@@ -1,5 +1,5 @@
+ from setuptools import setup
+-from python import __version__
++__version__ = "0.1.8"
+ 
+ setup(
+     name="imolecule",
