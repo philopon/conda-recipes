@@ -1,14 +1,13 @@
 package:
   name: chainer
-  version: "1.1.1"
+  version: {{ environ['GIT_DESCRIBE_TAG'][1:] }}
 
 build:
-  number: 1
+  number: 0
 
 source:
-  fn: chainer-1.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/c/chainer/chainer-1.1.1.tar.gz
-  md5: f785c33ac0c2cdb950183ca8a2299513
+  git_rev: v1.2.0
+  git_url: https://github.com/pfnet/chainer.git
 
 requirements:
   build:
