@@ -1,9 +1,0 @@
-package: chainer
-platform: 
- - linux-64
-engine:
- - python=2
-script:
-  - conda build .
-build_targets:
-  - conda
