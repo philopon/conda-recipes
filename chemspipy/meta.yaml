@@ -1,0 +1,32 @@
+package:
+  name: chemspipy
+  version: "1.0.4"
+
+source:
+  fn: ChemSpiPy-1.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/C/ChemSpiPy/ChemSpiPy-1.0.4.tar.gz
+  md5: b7aa326b63e867c701f5a3f25031bf02
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - requests
+    - six
+
+  run:
+    - python
+    - requests
+    - six
+
+test:
+  imports:
+    - chemspipy
+
+about:
+  home: https://github.com/mcs07/ChemSpiPy
+  license: MIT License
+  summary: 'A simple Python wrapper around the ChemSpider Web Services.'

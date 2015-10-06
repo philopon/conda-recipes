@@ -1,0 +1,23 @@
+package:
+  name: filelock
+  version: "2.0.4"
+
+source:
+  fn: filelock-2.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/f/filelock/filelock-2.0.4.tar.gz
+  md5: 837b351d74a2469ba15daa8e38e08c5c
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+about:
+  home: https://github.com/benediktschmitt/py-filelock
+  license: 'public domain'
+  summary: 'A platform independent file lock.'

@@ -1,41 +1,38 @@
 package:
   name: chainer
-  version: {{ environ['GIT_DESCRIBE_TAG'][1:] }}
+  version: 0
 
 build:
   number: 0
 
 source:
-  git_rev: v1.2.0
+  git_rev: v1.3.0
   git_url: https://github.com/pfnet/chainer.git
 
 requirements:
   build:
     - python
     - setuptools
-    - nose
-    - numpy
-    - protobuf
+    - numpy >=1.9
     - six >=1.9.0
+    - protobuf
+    - filelock
+    - nose
+    - mock
 
   run:
     - python
-    - numpy
-    - protobuf
+    - numpy >=1.9
     - six >=1.9.0
+    - protobuf
+    - filelock
 
 test:
   imports:
     - chainer
-    - chainer.cudnn
     - chainer.functions
-    - chainer.functions.caffe
     - chainer.optimizers
-    - chainer.testing
     - chainer.utils
-
-  requires:
-    - nose
 
 about:
   home: http://chainer.org/
