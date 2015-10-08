@@ -1,0 +1,33 @@
+package:
+  name: molvs
+  version: {{ 'git.' + environ.get('GIT_DESCRIBE_HASH', '') }}
+
+source:
+  git_url: https://github.com/mcs07/MolVS.git
+  url:  http://molvs.readthedocs.org/en/latest/
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+
+  run:
+    - python
+    - rdkit >=2015.03.1
+    - six
+
+test:
+  imports:
+    - molvs
+
+  commands:
+    - molvs --help
+
+about:
+  home: https://github.com/mcs07/MolVS
+  license: MIT License
+  summary: 'Molecule Validation and Standardization'
