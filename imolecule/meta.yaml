@@ -1,16 +1,14 @@
 package:
   name: imolecule
-  version: "0.1.8"
+  version: "0.1.9"
 
 build:
   number: 0
 
 source:
-  fn: imolecule-0.1.8.tar.gz
-  url: https://pypi.python.org/packages/source/i/imolecule/imolecule-0.1.8.tar.gz
-  md5: 8c2876275ad351651d8d4a033f75326a
-  patches:
-    - setup.py.patch
+  fn: imolecule-0.1.9.tar.gz
+  url: https://pypi.python.org/packages/source/i/imolecule/imolecule-0.1.9.tar.gz
+  md5: c097b65b510d416032f18914dbc36773
 
 requirements:
   build:
